@@ -1,0 +1,74 @@
+$head-text-color:#FFFFFF;
+$secondary-hesd-color:#212121;
+$primary-text-color: #757575;
+$acent-color: #2196F3;
+$main-bacground-color:#E5E5E5;
+$bacground-hero-color:#2F303A;
+$footer-text-color: rgba(255, 255, 255, 0.6);
+$backgroun-footer-color: #2F303A;
+$logo-color: #000000;
+$team-background-color: #F5F4FA;
+$head-line-color: #ECECEC;
+$background-main-button: #188CE8;
+
+
+.conteiner {
+    margin-left: auto;
+    margin-right: 0;
+    margin: 0;
+    max-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+
+    
+}
+
+.button {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+li{
+    list-style-type: none;
+    text-decoration: none;
+}

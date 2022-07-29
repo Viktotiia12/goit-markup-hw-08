@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web studio</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <!-- шапка -->
+    <div class="page-header">
+        <div class="conteiner header">
+            <nav class="nav">
+                <div class="logo-btn">
+                    <a href="" class="logo">
+                        <span class="logo__web">Web</span><span class="logo__studio">Studio</span>
+                    </a>
+                    <button type="button" class="nav__button is-open" data-menu-button aria-expanded="false" aria-controls="nav__menu">
+                        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use class="icon__cross" href="./images/icon2.svg#icon-close_40px"></use>
+                            <use class="icon__menu" href="./images/icon2.svg#icon-menu_40px"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="nav__menu is-open" id="nav__menu" data-menu>
+                    <div class="nav-pages">
+                                    <ul class="nav__menu__list">
+                                        <li class="nav__menu__item">
+                                            <a href="" class="nav__menu__link link__current">Студия</a>
+                                        </li>
+                                        <li class="nav__menu__item">
+                                            <a href="" class="nav__menu__link">Портфолио</a>
+                                        </li>
+                                        <li class="nav__menu__item">
+                                            <a href="" class="nav__menu__link">Контакты</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                                    
+                                    <ul class="nav__auth__list">
+                                        <li class="nav__auth__item">
+                                            <a href="" class="nav__auth__link current__auth">+38 096 111 11 11</a>
+                                        </li>
+                                        <li class="nav__auth__item">
+                                            <a href="" class="nav__auth__link">info@devstudio.com</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav__sosial__list">
+                                        <li class="nav__sosial__item">
+                                            <a href="" class="nav__sosial__link">Instagram</a>
+                                        </li>
+                                        <li class="nav__sosial__item">
+                                            <a href="" class="nav__sosial__link">Twitter</a>
+                                        </li>
+                                        <li class="nav__sosial__item">
+                                            <a href="" class="nav__sosial__link">Facebook</a>
+                                        </li>
+                                        <li class="nav__sosial__item">
+                                            <a href="" class="nav__sosial__link">LinkedIn</a>
+                                        </li>
+                                    </ul>
+ 
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

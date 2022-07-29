@@ -1,0 +1,19 @@
+@import "./vars";
+@import "./components/link";
+@import "./components/body";
+@import "./components/page-header";
+@import "./components/logo";
+@import "./components/hero";
+@import "./components/modal";
+@import "./components/feature";
+@import "./components/spesialism";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/portfolio-list";
+@import "./components/media";
+
+list {
+    text-decoration: none;
+    list-style-type: none;
+}
