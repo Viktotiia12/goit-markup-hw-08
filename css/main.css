@@ -6,6 +6,24 @@
   border: 1px solid green;
 }
 
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+  }
+}
+
 .button {
   display: inline-block;
   cursor: pointer;
@@ -110,10 +128,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.nav__menu__item {
-  margin-right: 50px;
 }
 
 .nav__menu__link {
@@ -1256,9 +1270,136 @@ body {
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
+  .nav__menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  .logo-btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav__auth__list {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav__auth__item:first-child {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .nav__menu__link:hover,
+  .nav__menu__link:focus {
+    color: #2196F3;
+  }
+  .nav__auth__link:hover,
+  .nav__auth__link:focus {
+    color: #2196F3;
+  }
+}
+
+@media (min-width: 767px) {
   .nav__button {
     display: none;
+  }
+  .nav__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .logo {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  .nav__btn {
+    margin-right: auto;
+  }
+  .nav__sosial__list {
+    display: none;
+  }
+  .nav__menu__list {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .nav__menu__item:not(:last-child) {
+    margin-right: 51px;
+  }
+  .nav__menu__link {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 00.02em;
+    color: #212121;
+  }
+  .link__current {
+    color: #2196F3;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .link__current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    width: 100%;
+    height: 4px;
+    display: inline-block;
+    background-color: #2196F3;
+    border-radius: 2px;
+  }
+  .nav__auth__list {
+    padding-top: 24px;
+    padding-bottom: 21px;
+  }
+  .nav__auth__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .nav__auth__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Roboto";
+    font-style: Medium;
+    font-size: 12px;
+    line-height: 1.17;
+    vertical-align: top;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+  .icon-mail {
+    fill: currentColor;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .icon-tel {
+    fill: currentColor;
+    margin-right: 10px;
+    cursor: pointer;
   }
 }
 
@@ -1349,6 +1490,45 @@ body {
   }
   .nav__menu__list {
     display: block;
+  }
+  .nav__menu__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .nav__auth__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .nav__auth__item:last-child {
+    margin-bottom: 32px;
+  }
+  .nav__sosial__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    margin-top: 64px;
+  }
+  .nav__sosial__item:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  .nav__sosial__item:not(:first-child) {
+    margin-left: 10px;
+  }
+  .nav__button:hover,
+  .nav__button:focus {
+    fill: #2196F3;
+  }
+  .icon-mail {
+    display: none;
+  }
+  .icon-tel {
+    display: none;
   }
 }
 
