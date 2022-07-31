@@ -1,17 +1,52 @@
 .hero{
-    max-width: 1600px;
-    height: 600px;
+    width: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
+    
 
     background-color: $bacground-hero-color;
+    
     text-align: center;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(images/Header-img.jpg);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+}
+@media not all, (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+    .hero{
+background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+url(../images/Header-img@2x.jpg);
+    }
+}
 
-&__title{
+@media not all,
+screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 1200px) and (min-resolution: 192dpi),
+screen and (min-width: 1200px) and (min-resolution: 2dppx){
+.hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/Header-img@2x.jpg);
+}}
+
+.hero .conteiner{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+}
+    @media screen and (min-width: 480px) {
+        .hero .conteiner{
+        max-width: 480px;}
+    }
+    @media screen and (min-width: 1200px) {
+        .hero .conteiner {
+            max-width: 1200px;}
+        }
+
+
+.hero__title{
     display:block;
     margin-bottom: 30px;
     width: 696px;
@@ -29,7 +64,7 @@ background-size: cover;
 
 }
 
-&__button{
+.hero__button{
     min-width: 200px;
     padding: 10px 32px;
     border: none;
@@ -46,9 +81,9 @@ transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1),
     backgroud-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__button:hover,
-&__button:focus{
+.hero.__button:hover,
+.hero__button:focus{
     background-color: $background-main-button;
     cursor: pointer;
 }
-}
+
