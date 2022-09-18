@@ -271,6 +271,16 @@
 .action-button{
     margin-left: 277px;
 }
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(-1*30px/2);
+}
+.portfolio__item{
+    max-width: 354px;
+    margin: calc(30px/2);
+    flex-basis: calc((100% - 4 * 30px) / 2);
+}
 }
 
 @media (max-width: 767px) {
@@ -544,6 +554,23 @@ display: block;
 }
 .footer-form-input{
     max-width: 450px;
+}
+.portfolio_section .conteiner{
+    max-width: 480px;
+}
+.filter__list{
+        display: flex;
+        gap: 8px;
+        row-gap: 15px;
+        flex-wrap: wrap;
+        
+            margin: 0;
+            padding: 0;
+            justify-content: flex-start;
+            margin-bottom: 40px;
+}
+.portfolio_section{
+    z-index: 1;
 }
 }
 @media (min-width: 1200px) {
